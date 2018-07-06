@@ -19,12 +19,45 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J5o-Pz-WX5"/>
+                        <segue destination="tXY-Bd-iY3" kind="relationship" relationship="rootViewController" id="DL9-Ek-evL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLd-ZM-d1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2102" y="-75"/>
+            <point key="canvasLocation" x="-2978" y="-75"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="Yd2-V0-PuC">
+            <objects>
+                <viewController title="Start View Controller" id="tXY-Bd-iY3" customClass="StartViewController" customModule="SampleMemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAo-xt-75c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ms-0n-Ssr">
+                                <rect key="frame" x="151" y="379" width="72" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="tappedStartButton:" destination="tXY-Bd-iY3" eventType="touchUpInside" id="EXj-qt-PCp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0ms-0n-Ssr" firstAttribute="centerX" secondItem="BAo-xt-75c" secondAttribute="centerX" id="WQF-1d-6Er"/>
+                            <constraint firstItem="0ms-0n-Ssr" firstAttribute="centerY" secondItem="BAo-xt-75c" secondAttribute="centerY" id="aDu-Mx-Kvs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c2f-42-Bkg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2RM-pc-IU1"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toListViewController" id="Vez-4R-vaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Snb-bi-DHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1815" y="-94"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -35,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-B3-ORF">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DKI-xk-NKr">
@@ -88,25 +121,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ej-M8-oPS">
-                                <rect key="frame" x="16" y="60" width="343" height="29"/>
+                                <rect key="frame" x="16" y="104" width="343" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6G-Ds-4SD">
-                                <rect key="frame" x="16" y="97" width="343" height="20"/>
+                                <rect key="frame" x="16" y="141" width="343" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgH-Gd-FDN">
-                                <rect key="frame" x="16" y="133" width="49" height="29"/>
+                                <rect key="frame" x="16" y="177" width="49" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T56-et-sU3">
-                                <rect key="frame" x="16" y="178" width="343" height="19.333333333333343"/>
+                                <rect key="frame" x="16" y="222" width="343" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -235,8 +268,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S8T-BI-NUg"/>
         <segue reference="m9q-7V-Cxa"/>
-        <segue reference="2bG-oc-gLz"/>
+        <segue reference="Vez-4R-vaU"/>
     </inferredMetricsTieBreakers>
 </document>

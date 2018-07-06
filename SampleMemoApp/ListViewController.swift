@@ -20,9 +20,7 @@ class ListViewController: UIViewController,UITableViewDelegate, UITableViewDataS
   var selectedNumber : Int? = nil
   var globalVar = GlobalVar.shared
 
-  override func viewWillAppear(_ animated: Bool) {
-    tabeleReload()
-  }
+
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     print("list:",globalVar.list.count)
@@ -61,29 +59,12 @@ class ListViewController: UIViewController,UITableViewDelegate, UITableViewDataS
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    connectApi.selectAll()
 
-    let notificationCenter = NotificationCenter.default
-    //アプリがアクティブになったとき
-    notificationCenter.addObserver(
-      self,
-      selector: Selector(("selectAll")),
-      name:NSNotification.Name.UIApplicationDidBecomeActive,
-      object: nil)
-
-//    ConnectApi().selectAll()
     }
-  
-  func createTableView(){
-    
-  }
-  
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-  }
-  func tabeleReload(){
-    memoTableView.reloadData()
   }
 
 
