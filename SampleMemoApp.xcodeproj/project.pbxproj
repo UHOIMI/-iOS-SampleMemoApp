@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007A8EE720E208F400567C42 /* ConnectApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A8EE620E208F400567C42 /* ConnectApi.swift */; };
 		00AD1E7D20CF89D1000A7829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E7C20CF89D1000A7829 /* AppDelegate.swift */; };
-		00AD1E7F20CF89D1000A7829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E7E20CF89D1000A7829 /* ViewController.swift */; };
+		00AD1E7F20CF89D1000A7829 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E7E20CF89D1000A7829 /* ListViewController.swift */; };
 		00AD1E8220CF89D1000A7829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AD1E8020CF89D1000A7829 /* Main.storyboard */; };
 		00AD1E8520CF89D1000A7829 /* SampleMemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E8320CF89D1000A7829 /* SampleMemoApp.xcdatamodeld */; };
 		00AD1E8720CF89D2000A7829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AD1E8620CF89D2000A7829 /* Assets.xcassets */; };
 		00AD1E8A20CF89D2000A7829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AD1E8820CF89D2000A7829 /* LaunchScreen.storyboard */; };
+		00AD1E9220CF97EC000A7829 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E9120CF97EC000A7829 /* EditViewController.swift */; };
+		00AD1E9420CF97FE000A7829 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E9320CF97FE000A7829 /* DetailViewController.swift */; };
+		00AFA7AE20E246C500F62BDB /* ConnectJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AFA7AD20E246C500F62BDB /* ConnectJson.swift */; };
+		00F40A5120D15100005428D7 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F40A5020D15100005428D7 /* KeyBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007A8EE620E208F400567C42 /* ConnectApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApi.swift; sourceTree = "<group>"; };
 		00AD1E7920CF89D1000A7829 /* SampleMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AD1E7C20CF89D1000A7829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00AD1E7E20CF89D1000A7829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00AD1E7E20CF89D1000A7829 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		00AD1E8120CF89D1000A7829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00AD1E8420CF89D1000A7829 /* SampleMemoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SampleMemoApp.xcdatamodel; sourceTree = "<group>"; };
 		00AD1E8620CF89D2000A7829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00AD1E8920CF89D2000A7829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00AD1E8B20CF89D2000A7829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00AD1E9120CF97EC000A7829 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		00AD1E9320CF97FE000A7829 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		00AFA7AD20E246C500F62BDB /* ConnectJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectJson.swift; sourceTree = "<group>"; };
+		00F40A5020D15100005428D7 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				00AD1E7C20CF89D1000A7829 /* AppDelegate.swift */,
-				00AD1E7E20CF89D1000A7829 /* ViewController.swift */,
+				00F40A5020D15100005428D7 /* KeyBoard.swift */,
+				00AD1E7E20CF89D1000A7829 /* ListViewController.swift */,
+				00AD1E9120CF97EC000A7829 /* EditViewController.swift */,
+				00AD1E9320CF97FE000A7829 /* DetailViewController.swift */,
 				00AD1E8020CF89D1000A7829 /* Main.storyboard */,
 				00AD1E8620CF89D2000A7829 /* Assets.xcassets */,
 				00AD1E8820CF89D2000A7829 /* LaunchScreen.storyboard */,
 				00AD1E8B20CF89D2000A7829 /* Info.plist */,
 				00AD1E8320CF89D1000A7829 /* SampleMemoApp.xcdatamodeld */,
+				007A8EE620E208F400567C42 /* ConnectApi.swift */,
+				00AFA7AD20E246C500F62BDB /* ConnectJson.swift */,
 			);
 			path = SampleMemoApp;
 			sourceTree = "<group>";
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AFA7AE20E246C500F62BDB /* ConnectJson.swift in Sources */,
+				00AD1E9220CF97EC000A7829 /* EditViewController.swift in Sources */,
 				00AD1E8520CF89D1000A7829 /* SampleMemoApp.xcdatamodeld in Sources */,
-				00AD1E7F20CF89D1000A7829 /* ViewController.swift in Sources */,
+				007A8EE720E208F400567C42 /* ConnectApi.swift in Sources */,
+				00F40A5120D15100005428D7 /* KeyBoard.swift in Sources */,
+				00AD1E9420CF97FE000A7829 /* DetailViewController.swift in Sources */,
+				00AD1E7F20CF89D1000A7829 /* ListViewController.swift in Sources */,
 				00AD1E7D20CF89D1000A7829 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WYBU2DK75;
 				INFOPLIST_FILE = SampleMemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WYBU2DK75;
 				INFOPLIST_FILE = SampleMemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
