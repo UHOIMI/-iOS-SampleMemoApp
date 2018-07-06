@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002A761120EF496200B6E0D1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002A761020EF496200B6E0D1 /* StartViewController.swift */; };
 		007A8EE720E208F400567C42 /* ConnectApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A8EE620E208F400567C42 /* ConnectApi.swift */; };
 		00AD1E7D20CF89D1000A7829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E7C20CF89D1000A7829 /* AppDelegate.swift */; };
 		00AD1E7F20CF89D1000A7829 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD1E7E20CF89D1000A7829 /* ListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002A761020EF496200B6E0D1 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		007A8EE620E208F400567C42 /* ConnectApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApi.swift; sourceTree = "<group>"; };
 		00AD1E7920CF89D1000A7829 /* SampleMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AD1E7C20CF89D1000A7829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				00AD1E7C20CF89D1000A7829 /* AppDelegate.swift */,
 				00F40A5020D15100005428D7 /* KeyBoard.swift */,
 				00AD1E7E20CF89D1000A7829 /* ListViewController.swift */,
+				002A761020EF496200B6E0D1 /* StartViewController.swift */,
 				00AD1E9120CF97EC000A7829 /* EditViewController.swift */,
 				00AD1E9320CF97FE000A7829 /* DetailViewController.swift */,
 				00AD1E8020CF89D1000A7829 /* Main.storyboard */,
@@ -158,6 +161,7 @@
 				00AD1E8520CF89D1000A7829 /* SampleMemoApp.xcdatamodeld in Sources */,
 				007A8EE720E208F400567C42 /* ConnectApi.swift in Sources */,
 				00F40A5120D15100005428D7 /* KeyBoard.swift in Sources */,
+				002A761120EF496200B6E0D1 /* StartViewController.swift in Sources */,
 				00AD1E9420CF97FE000A7829 /* DetailViewController.swift in Sources */,
 				00AD1E7F20CF89D1000A7829 /* ListViewController.swift in Sources */,
 				00AD1E7D20CF89D1000A7829 /* AppDelegate.swift in Sources */,
