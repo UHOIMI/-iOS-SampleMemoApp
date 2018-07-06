@@ -4,7 +4,7 @@
 //
 //  Created by 石倉一平 on 2018/06/12.
 //  Copyright © 2018年 Swift-Biginners. All rights reserved.
-//
+//a
 
 import UIKit
 import CoreData
